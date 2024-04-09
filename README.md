@@ -33,6 +33,7 @@ public class Pattern
 {
     public static void Main()
     {
+      int usage;
       int[][] jaggedArray = new int[4][];
       jaggedArray[0] = new int[3];
       jaggedArray[1] = new int[5];
@@ -42,7 +43,7 @@ public class Pattern
       {
         for (int j = 0; j < jaggedArray[i].Length; j++)
         {
-          jaggedArray[i][j] = i * j + 60;
+          usage = i * j + 60;
           Console.WriteLine("CPU usage of {0} node is {1}%", i + 1, jaggedArray[i][j]);
 
         }
@@ -52,8 +53,7 @@ public class Pattern
 ```
 
 ## Output:
-<img width="960" alt="image" src="https://github.com/JayanthYadav123/Exp04-Jagged-Array/assets/94836154/f6906eeb-ee91-48da-8f0d-49b07faf7bdb">
-
+![image](https://github.com/Sachin-vlr/Exp04-Jagged-Array/assets/113497666/cf4ca9b1-cc81-4ade-9d0c-03fe0fac3707)
 
 ## Result:
 Thus C# program to create a sample CPU usage on a network with 4 nodes using a jagged array is executed successfully.
